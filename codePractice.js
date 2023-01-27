@@ -109,9 +109,47 @@
 
 // 5. How to get unique values in an array [duplicate]
 
-let array = [4, 0, 12, 30, 4, 0, 12];
+// let array = [4, 0, 12, 30, 4, 0, 12];
 
 // console.log([...new Set(array)]);
 
-const unique = array.filter((item, i, ar) => ar.indexOf(item) === i);
-console.log(unique);
+// const unique = array.filter((item, i, ar) => ar.indexOf(item) === i);
+// console.log(unique);
+
+//6. find the unique character
+
+// function findUnique(str) {
+//   let uniq = "";
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (uniq.includes(str[i]) === false) {
+//       uniq += str[i];
+//     }
+//   }
+//   return uniq;
+// }
+// console.log(findUnique("GeekGeek"));
+
+//7. count the vowel
+
+// const countVowel = (str) => {
+//   const count = str.match(/[aeiou]/gi);
+//   return count;
+// };
+
+//8. Stock Max Profit
+// console.log(countVowel("Israel"));
+
+// const best = (arr) => {
+//   const maxValue = Math.max(...arr);
+//   if (arr.length <= 1) {
+//     if (arr[0] / 1 === arr[0]) {
+//       return 0;
+//     }
+//   } else {
+//     return maxValue === arr[0] ? 0 : maxValue;
+//   }
+// };
+// console.log(best([4, 7, 9, 3]));
+
+//9.
