@@ -1,21 +1,8 @@
-function isAnagram(s, t) {
-  let first = s.split("").sort();
-  let second = t.split("").sort();
-  console.log(first);
-  console.log(second);
-  if (first.length !== second.length)
-    return "This word not have the same length";
-
-  for (let i = 0; i < first.length; i++) {
-    if (first[i] !== second[i]) {
-      return "It is NOT Anagram!";
-    }
-  }
-  return "It is Anagram";
+function defan(address) {
+  const rep = /\./g;
+  const res = address.replace(rep, "[.]");
+  return res;
 }
 
-let result = isAnagram("anagram", "nagaram");
-let result2 = isAnagram("anagram", "nagarah");
-
-console.log(result);
-console.log(result2);
+console.log("Output: " + defan("1.1.1.1"));
+console.log("Output: " + defan("225.144.196.1.0"));
