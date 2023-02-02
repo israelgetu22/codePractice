@@ -152,4 +152,54 @@
 // };
 // console.log(best([4, 7, 9, 3]));
 
-//9.
+//9. Find single Number
+
+// const singleNumber = (nums) => nums.reduce((a, b) => a ^ b);
+
+// console.log(singleNumber([1, 1, 2, 2]));
+
+// arr = [1, 2, 1, 3, 2];
+
+// function singleNumber(nums) {
+//   console.log(nums.reduce((a, b) => a ^ b));
+// }
+
+// singleNumber(arr);
+
+//10. Contain Duplicate
+
+// let nums = [1, 2, 3];
+
+// function containDuplicate(arr) {
+//   let setNums = new Set(arr);
+//   //console.log(setNums.size, nums.length);
+//   if (setNums.size === nums.length) {
+//     return console.log("True: has No Duplicate");
+//   }
+//   return console.log("False: has Duplicate");
+// }
+
+// containDuplicate(nums);
+
+// Anagram
+function isAnagram(s, t) {
+  let first = s.split("").sort();
+  let second = t.split("").sort();
+  console.log(first);
+  console.log(second);
+  if (first.length !== second.length)
+    return "This word not have the same length";
+
+  for (let i = 0; i < first.length; i++) {
+    if (first[i] !== second[i]) {
+      return "It is NOT Anagram!";
+    }
+  }
+  return "It is Anagram";
+}
+
+let result = isAnagram("anagram", "nagaram");
+let result2 = isAnagram("anagram", "nagarah");
+
+console.log(result);
+console.log(result2);
