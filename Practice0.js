@@ -1,13 +1,14 @@
-function runningSum(nums) {
-  let total = 0;
-  let result = [];
-
-  for (let i = 0; i < nums.length; i++) {
-    total = total + nums[i];
-
-    result.push(total);
+function goodPair(arr) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; arr.length; i++) {
+      if (arr[i] === arr[j]) {
+        count = count + 1;
+      }
+    }
   }
-  return result;
+  return count;
 }
 
-console.log(runningSum([1, 2, 3, 4]));
+let data = [1, 1, 2, 3];
+console.log(goodPair(data));
