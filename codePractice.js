@@ -232,11 +232,27 @@
 // console.log(fib(5));
 
 // Defanging an IP address
-function defan(address) {
-  const rep = /\./g;
-  const res = address.replace(rep, "[.]");
-  return res;
-}
+// function defan(address) {
+//   const rep = /\./g;
+//   const res = address.replace(rep, "[.]");
+//   return res;
+// }
 
-console.log("Output: " + defan("1.1.1.1"));
-console.log("Output: " + defan("225.144.196.1.0"));
+// console.log("Output: " + defan("1.1.1.1"));
+// console.log("Output: " + defan("225.144.196.1.0"));
+
+// Running Sum
+
+// function runningSum(nums) {
+//   let total = 0;
+//   let result = [];
+
+//   for (let i = 0; i < nums.length; i++) {
+//     total = total + nums[i];
+
+//     result.push(total);
+//   }
+//   return result;
+// }
+
+// console.log(runningSum([1, 2, 3, 4]));
