@@ -297,12 +297,46 @@
 // console.log(richestCW(accounts));
 
 //Build Array from Permutation
-let outPut = [];
-function buildArray(nums) {
-  for (let i = 0; i < nums.length; i++) {
-    outPut[i] = nums[nums[i]];
-  }
-  return outPut;
-}
+// let outPut = [];
+// function buildArray(nums) {
+//   for (let i = 0; i < nums.length; i++) {
+//     outPut[i] = nums[nums[i]];
+//   }
+//   return outPut;
+// }
 
-console.log(buildArray([0, 2, 1, 5, 3, 4]));
+// console.log(buildArray([0, 2, 1, 5, 3, 4]));
+
+//Getconcatenation
+
+// function getConcatenation(nums) {
+//   return nums.concat(nums);
+// }
+
+// let arr = [1, 2, 3];
+// console.log(getConcatenation(arr));
+
+// function getConcatenation(nums) {
+//   return [...nums, ...nums];
+// }
+
+// let arr = [1, 2, 3];
+// console.log(getConcatenation(arr));
+
+//Fizz Buzz
+let arr = [];
+function fizzBuzz(n) {
+  for (let i = 0; i < n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      arr.push("Fizz Buzz");
+    } else if (i % 5 === 0) {
+      arr.push("Buzz");
+    } else if (i % 3 === 0) {
+      arr.push("Fizz");
+    } else {
+      arr.push(i);
+    }
+  }
+  return arr;
+}
+console.log(fizzBuzz(10));
