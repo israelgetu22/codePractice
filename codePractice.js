@@ -259,20 +259,20 @@
 
 // Good Pair
 
-// function goodPair(arr) {
-//   let count = 0;
-//   for (let i = 0; i < arr.length; i++) {
-//     for (let j = i + 1; arr.length; i++) {
-//       if (arr[i] === arr[j]) {
-//         count = count + 1;
-//       }
-//     }
-//   }
-//   return count;
-// }
+function goodPair(arr) {
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = i + 1; arr.length; i++) {
+      if (arr[i] === arr[j]) {
+        count = count + 1;
+      }
+    }
+  }
+  return count;
+}
 
-// let data = [1, 1, 2, 3];
-// console.log(goodPair(data));
+let data = [1, 1, 2, 3];
+console.log(goodPair(data));
 
 // Richest Customer Wealth
 // function richestCW(accounts) {
@@ -323,20 +323,20 @@
 // let arr = [1, 2, 3];
 // console.log(getConcatenation(arr));
 
-//Fizz Buzz
-let arr = [];
-function fizzBuzz(n) {
-  for (let i = 0; i < n; i++) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      arr.push("Fizz Buzz");
-    } else if (i % 5 === 0) {
-      arr.push("Buzz");
-    } else if (i % 3 === 0) {
-      arr.push("Fizz");
-    } else {
-      arr.push(i);
-    }
-  }
-  return arr;
-}
-console.log(fizzBuzz(10));
+// //Fizz Buzz
+// let arr = [];
+// function fizzBuzz(n) {
+//   for (let i = 0; i < n; i++) {
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       arr.push("Fizz Buzz");
+//     } else if (i % 5 === 0) {
+//       arr.push("Buzz");
+//     } else if (i % 3 === 0) {
+//       arr.push("Fizz");
+//     } else {
+//       arr.push(i);
+//     }
+//   }
+//   return arr;
+// }
+// console.log(fizzBuzz(10));
