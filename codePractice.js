@@ -295,3 +295,14 @@
 // ];
 
 // console.log(richestCW(accounts));
+
+//Build Array from Permutation
+let outPut = [];
+function buildArray(nums) {
+  for (let i = 0; i < nums.length; i++) {
+    outPut[i] = nums[nums[i]];
+  }
+  return outPut;
+}
+
+console.log(buildArray([0, 2, 1, 5, 3, 4]));
