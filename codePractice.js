@@ -340,3 +340,19 @@ console.log(goodPair(data));
 //   return arr;
 // }
 // console.log(fizzBuzz(10));
+
+//Palindrome Best
+function palindrome(string) {
+  const str = string.replace(/[^a-z]/gi, "").toLowerCase();
+  console.log(str);
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== str[str.length - 1]) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+}
+
+console.log(palindrome("ey%$#&* e"));
