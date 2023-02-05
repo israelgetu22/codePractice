@@ -342,17 +342,25 @@ console.log(goodPair(data));
 // console.log(fizzBuzz(10));
 
 //Palindrome Best
-function palindrome(string) {
-  const str = string.replace(/[^a-z]/gi, "").toLowerCase();
-  console.log(str);
+// function palindrome(string) {
+//   const str = string.replace(/[^a-z]/gi, "").toLowerCase();
+//   console.log(str);
 
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] !== str[str.length - 1]) {
-      return false;
-    } else {
-      return true;
-    }
-  }
-}
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] !== str[str.length - 1]) {
+//       return false;
+//     } else {
+//       return true;
+//     }
+//   }
+// }
 
-console.log(palindrome("ey%$#&* e"));
+// console.log(palindrome("ey%$#&* e"));
+// // 22
+// function palindrome(string) {
+//   let polishedString = string.replace(/\W+|_/gi, "").toLowerCase();
+//   let reverseString = polishedString.split("").reverse("").join("");
+//   return polishedString === reverseString ? true : false;
+// }
+
+// console.log(palindrome("Eye"));
