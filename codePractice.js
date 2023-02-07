@@ -364,3 +364,34 @@ console.log(goodPair(data));
 // }
 
 // console.log(palindrome("Eye"));
+
+//ROT13
+
+// function rot13(str) {
+//   let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//   let answer = "";
+//   for (let i = 0; i < str.length; i++) {
+//     if (alphabet.indexOf(str[i]) >= 13) {
+//       answer += alphabet[alphabet.indexOf(str[i]) - 13];
+//     } else if (
+//       (alphabet.indexOf(str[i]) < 13) &
+//       (alphabet.indexOf(str[i]) > -1)
+//     ) {
+//       answer += alphabet[alphabet.indexOf(str[i]) + 13];
+//     } else {
+//       answer += str[i];
+//     }
+//   }
+//   return answer;
+// }
+
+// console.log(rot13("SERR PBQR PNZC"));
+// //FREE CODE CAMP
+
+//Telephone Number Validator
+function telephoneCheck(str) {
+  let regex = /^1?\s?(\d{3}|\(\d{3}\))-?\s?\d{3}-?\s?\d{4}$/gm;
+  return regex.test(str);
+}
+
+console.log(telephoneCheck("555-555-5555"));
