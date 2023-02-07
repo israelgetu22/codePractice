@@ -8,8 +8,8 @@ function rot13(str) {
       (alphabet.indexOf(str[i]) < 13) &
       (alphabet.indexOf(str[i]) > -1)
     ) {
-      answer += alphabet.indexOf(str[i]) + 13;
-    }
+      answer += alphabet[alphabet.indexOf(str[i]) + 13];
+    } else answer += str[i];
   }
 
   return answer;
