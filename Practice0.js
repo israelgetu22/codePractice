@@ -1,18 +1,14 @@
-function rot13(str) {
-  let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  let answer = "";
-  for (i = 0; i < str.length; i++) {
-    if (alphabet.indexOf(str[i]) >= 13) {
-      answer += alphabet[alphabet.indexOf(str[i]) - 13];
-    } else if (
-      (alphabet.indexOf(str[i]) < 13) &
-      (alphabet.indexOf(str[i]) > -1)
-    ) {
-      answer += alphabet[alphabet.indexOf(str[i]) + 13];
-    } else answer += str[i];
-  }
+//Problem 1: Multiples of 3 and 5
 
-  return answer;
+function multiplesOf3and5(number) {
+  let sum = 0;
+
+  for (let i = 1; i < number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      sum += i;
+    }
+  }
+  return sum;
 }
 
-console.log(rot13("SERR PBQR PNZC"));
+console.log(multiplesOf3and5(50));

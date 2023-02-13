@@ -33,32 +33,52 @@
 // console.log(checkPalindrome("israel"));
 
 // convert to Roman
-function covertToRoman(num) {
-  let romanNumeral = {
-    M: 1000,
-    CM: 900,
-    D: 500,
-    CD: 400,
-    C: 100,
-    XC: 90,
-    L: 50,
-    XL: 40,
-    X: 10,
-    IX: 9,
-    V: 5,
-    IV: 4,
-    I: 1,
-  };
+// function covertToRoman(num) {
+//   let romanNumeral = {
+//     M: 1000,
+//     CM: 900,
+//     D: 500,
+//     CD: 400,
+//     C: 100,
+//     XC: 90,
+//     L: 50,
+//     XL: 40,
+//     X: 10,
+//     IX: 9,
+//     V: 5,
+//     IV: 4,
+//     I: 1,
+//   };
 
-  let answer = "";
+//   let answer = "";
 
-  for (let prop in romanNumeral) {
-    if (num >= romanNumeral[prop]) {
-      answer += prop;
-      num -= romanNumeral[prop];
-    }
-  }
-  return answer;
-}
-console.log(covertToRoman("50"));
-console.log(covertToRoman("42"));
+//   for (let prop in romanNumeral) {
+//     if (num >= romanNumeral[prop]) {
+//       answer += prop;
+//       num -= romanNumeral[prop];
+//     }
+//   }
+//   return answer;
+// }
+// console.log(covertToRoman("50"));
+// console.log(covertToRoman("42"));
+
+// //ROT 13
+// function rot13(str) {
+//   let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//   let answer = "";
+//   for (i = 0; i < str.length; i++) {
+//     if (alphabet.indexOf(str[i]) >= 13) {
+//       answer += alphabet[alphabet.indexOf(str[i]) - 13];
+//     } else if (
+//       (alphabet.indexOf(str[i]) < 13) &
+//       (alphabet.indexOf(str[i]) > -1)
+//     ) {
+//       answer += alphabet[alphabet.indexOf(str[i]) + 13];
+//     } else answer += str[i];
+//   }
+
+//   return answer;
+// }
+
+// console.log(rot13("SERR PBQR PNZC"));

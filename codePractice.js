@@ -389,9 +389,10 @@ console.log(goodPair(data));
 // //FREE CODE CAMP
 
 //Telephone Number Validator
-function telephoneCheck(str) {
-  let regex = /^1?\s?(\d{3}|\(\d{3}\))-?\s?\d{3}-?\s?\d{4}$/gm;
-  return regex.test(str);
-}
+// function telephoneCheck(str) {
+//   let regex = /^1?\s?(\d{3}|\(\d{3}\))-?\s?\d{3}-?\s?\d{4}$/gm;
+//   return regex.test(str);
+// }
 
-console.log(telephoneCheck("555-555-5555"));
+// console.log(telephoneCheck("555-555-5555"));
+sdds
